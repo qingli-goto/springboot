@@ -1,0 +1,20 @@
+本地新项目提交到远程仓库步骤
+1、初始化项目，git init
+
+2、检查项目已更改的信息，git status
+
+3、添加新文件，git add .      备注：(.是所有新增的文件)    或者    git add filename      （文件名）
+
+4、将所有修改的文件提交到本地仓库，git commit -am "注释信息"        备注：-a表示所有修改还没提交的文件
+
+5、这时候远程仓库还没有项目，要去远程仓管新建一个项目，将项目的ssh地址复制下来
+
+6、添加源地址，git remote add origin ssh地址
+
+7、执行git remote -v
+
+8、此时本地没有和远程仓库已有的文件合并，执行git fetch
+
+9、将本地和远程的合并，git rebase origin/master
+
+10、最后push到远程仓库，git push origin maste
